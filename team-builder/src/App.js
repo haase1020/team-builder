@@ -1,6 +1,6 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import { Container } from 'reactstrap';
+import { useState } from 'react';
+// import { Container } from 'reactstrap';
 import './App.css';
 
 function App() {
@@ -23,8 +23,9 @@ function App() {
   };
 
   return (
-    <div>
-        <Form addMember = {addMemeber}/>
+    <div className="App">
+        <h1>List of Team Members</h1>
+        <Form addMember = {addMember}/>
         <MemberCard member = {teamMembers}/>
     </div>
   );

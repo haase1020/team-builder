@@ -1,4 +1,4 @@
-import Reacrt, { useState } from 'react';
+import React, { useState } from 'react';
 
 
 const Form = props => {
@@ -24,26 +24,29 @@ const submitForm = event =>{
 };
 
 return (
-    <form onSubmite={submitform}>
+    <form onSubmit={submitform}>
         <label htmlFor="name">Name</label>
         <input id='name'
                 name='name'
                 type='text'
                 onChange={handleChanges}
+                placeholder='Enter Name'
                 value={member.name} />
         <label htmlFor="email">Email</label>
         <input id='email'
                 name='email'
                 type='text'
                 onChange={handleChanges}
+                placeholder='Enter Email'
                 value={member.email} />
         <label htmlFor='role'>Role</label>
         <input  id='role'
                 name='role'
                 type='text'
                 onChange={handleChanges}
+                placeholder='Enter Role'
                 value={member.role} />
-        <button type='submit'>Add Team Buddy</button>
+        <button type='submit'>Add Member</button>
 
     </form>
 );
